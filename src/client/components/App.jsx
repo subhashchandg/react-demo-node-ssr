@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Button from './button'
 
 const App = props=>{
 
@@ -8,7 +9,7 @@ const App = props=>{
     return (
         <Fragment>
             <h1>Hello World!!!!</h1>
-            <button onClick={handleClick}> Hit Me !!!</button>
+            <Button handleClick={handleClick} />
         </Fragment>
     )
 }

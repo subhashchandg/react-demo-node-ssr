@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "start":"webpack && node ./src/server/"
+   "start":"npm run build:client && npm run build:server && node ./build/server",
+   "build:client":"webpack --config ./webpack.client.js",
+   "build:server":"webpack --config ./webpack.server.js"
   },
   "keywords": [],
   "author": "",
